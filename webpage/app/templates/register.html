@@ -1,0 +1,121 @@
+ <title>Booking</title>
+    <style>
+    div{
+       background-color:aqua;
+       height:95px;
+       }
+</style>
+
+<body style="color:black">
+<center>
+       <div> <h1 style="color:white;font-family: tahoma,sans-serif;font-size:60px;" >
+            PeaceFul
+                  Trip ✈️
+        </h1>
+           </div>
+
+        <hr>
+
+
+         <section id="Welcome">
+                <h2>Welcome to our PeaceFull Trip</h2>
+                <h3>Plan your dream trip with ease and convenience. Explore amazing destination and create your personalized itinerary.</h3>
+         </section>
+    <hr>
+   <h3 style="font-size:25px"> Register now for Prebooking</h3>
+
+ </center>
+
+<!--form-->
+<center>
+<form action="/Thank/" method="POST" autocomplete="off" >
+
+
+        {% csrf_token %}
+    <table>
+        <tr>
+            <td><p>Name:</p></td>
+            <td><input type="text" placeholder="Enter your Name" name="name"></td>
+        </tr>
+
+        <tr>
+            <td>Age:</td>
+            <td><input type="text" placeholder="Enter your Age" name="age"> </td>
+        </tr>
+
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="text"  name="gender">
+             </td>
+        </tr>
+
+        <tr>
+            <td>Mobile No:</td>
+            <td><input type="text" placeholder="Enter your Mobile No" name="mobile"></td>
+        </tr>
+
+        <tr>
+            <td>Email id:</td>
+            <td><input type="email" placeholder="Enter Your Email " name="email"></td>
+        </tr>
+
+        <tr>
+            <td>Trip Starting Date:</td>
+            <td><input type="date" name="starts"></td>
+        </tr>
+
+        <tr>
+            <td>Trip Ending Date:</td>
+            <td><input type="date" name="ends"> </td>
+        </tr>
+
+        <tr>
+            <td>State:</td>
+            <td><input type="text" placeholder="Enter Your State" name="state"></td>
+        </tr>
+
+        <tr>
+            <td>District:</td>
+            <td><input type="text" placeholder="Enter Your District" name="district"> </td>
+        </tr>
+
+        <tr>
+            <td>Distination:</td>
+            <td><input type="text" placeholder="Enter a your Trip Distination" name="distination"> </td>
+        </tr>
+
+        <tr>
+            <td>How many members in a trip:
+            </td>
+            <td><input type="number" placeholder="Enter a count of members" name="mem"></td>
+        </tr>
+
+        <tr>
+            <td>How Many Adult:
+            </td>
+            <td><input type="number" placeholder="Enter a count of Adult" name="adult"></td>
+        </tr>
+
+        <tr>
+            <td>How Many Childrens:
+            </td>
+            <td><input type="number" placeholder="Enter a count of children" name="children"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit"> </td>
+        </tr>
+    </table>
+</form>
+ </center>
+<center>
+  <footer style="background-color:aqua;">
+            <h1>Contact</h1>
+    <h2>peacefultrip.officialtrips@gmail.com</h2>
+    <h3>7th venue street Tirumangalam </h3>
+    <h4> &copy; 2023 PeaceFul Trip</h4>
+
+
+  </footer>
+</center>
